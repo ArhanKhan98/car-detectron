@@ -10,7 +10,7 @@ import time
 # and send_from_directory will help us to send/show on the
 # browser the file that the user just uploaded
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory,flash
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 # Initialize the Flask application
 app = Flask(__name__)
 # This is the path to the upload directory
